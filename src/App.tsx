@@ -1,12 +1,16 @@
 import Header from './components/Header';
 import Landing from './content/Landing';
+import About from './content/About'
+import Experience from './content/Experience';
 
 const App = () => {
   return (
     <>
-      <Header/>
+      <Header />
       <main>
-        <Landing/>
+        <Landing />
+        <About />
+        <Experience />
       </main>
     </>
   )

@@ -1,14 +1,42 @@
 import Grid from '@mui/material/Grid';
-import { Avatar, Typography } from "@mui/material";
+import { Avatar, styled, Typography } from "@mui/material";
+import { useTheme } from '@mui/material';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import MailIcon from '@mui/icons-material/Mail';
+
+
+const Root = styled(Grid)(({ theme }) => ({
+  textAlign: "center", [theme.breakpoints.up('md')]: {
+    textAlign: 'left',
+  }
+}));
+
 
 const Landing = () => {
-  return(
-    <Grid container alignItems="center" justifyContent="center" sx={{height:'100%'}} >
-      <Grid item md={6} lg={6} xl={6} order={{ xs: 2, sm: 2, md: 1, lg: 1, xl: 1 }} sx={{padding:'2rem'}}>
-        <Typography variant="h2" component="div">Hi 👋 I'm Jacob, A Full Stack Web Developer Working @ </Typography>
-      </Grid>
-      <Grid item md={6} lg={6} xl={6} order={{ xs: 1, sm: 1, md:2, lg: 2, xl: 2 }} sx={{display:'flex', justifyContent:'center'}}>
-        <Avatar sx={{height:320, width:320}}>JR</Avatar>
+  const theme = useTheme();
+  return (
+    <Grid
+      container
+      alignItems="center"
+      justifyContent="center"
+      sx={{ height: '100vh', background: '#73956F' }}
+    >
+      <Root item md={6} lg={6} xl={6} order={{ xs: 2, sm: 2, md: 1, lg: 1, xl: 1 }} sx={{ padding: '2rem' }}>
+        <Typography variant="h5" component="div">Hi There 👋, I'm</Typography>
+        <Typography variant="h2" component="div">Jacob Ross</Typography>
+        <Typography variant="h4" component="div">A Full Stack Web Developer Powering the Future @ OPG</Typography>
+        <GitHubIcon />
+        <LinkedInIcon />
+        <MailIcon />
+      </Root>
+      <Grid
+        item
+        md={6} lg={6} xl={6}
+        order={{ xs: 1, sm: 1, md: 2, lg: 2, xl: 2 }}
+        sx={{ display: 'flex', justifyContent: 'center' }}
+      >
+        <Avatar sx={{ height: 320, width: 320 }}>JR</Avatar>
       </Grid>
     </Grid>
   );
