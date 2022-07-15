@@ -1,10 +1,10 @@
 import Grid from '@mui/material/Grid';
 import { Avatar, Typography } from "@mui/material";
 
-const About = () => {
+const Projects = () => {
   return(
-    <Grid container direction="column" alignItems="center" justifyContent="center" sx={{width:'50%'}}>
-      <Grid item xs={5}><Typography variant="h3" id="experience">About Me</Typography></Grid>
+    <Grid container direction="column" alignItems="center" justifyContent="center" sx={{width:'50%'}} id="about">
+      <Grid item xs={5}><Typography variant="h3">Projects</Typography></Grid>
       <Grid item xs={5}>
         <Typography variant="h5" className="customh1">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -16,4 +16,4 @@ const About = () => {
     </Grid>
   );
 }
-export default About;
+export default Projects;

@@ -14,9 +14,9 @@ const Header = () => {
 
   return (
     <header className={`${showHeader ? 'sticky' : ''}`}>
-      <button>Projects</button>
-      <button>Experience</button>
-      <button>About</button>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
     </header>
   )
 }

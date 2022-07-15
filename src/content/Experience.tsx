@@ -4,8 +4,8 @@ import { GitCommit, GitBranch, GitPullRequest, MessageDots } from "tabler-icons-
 
 const Experience = () => {
   return (
-    <Grid container direction="column" alignItems="center" justifyContent="center" sx={{ width: '50%' }} >
-      <Grid item xs={5}><Typography variant="h3">Experience</Typography></Grid>
+    <Grid container direction="column" alignItems="center" justifyContent="center" spacing={4} sx={{ width: '50%' }}>
+      <Grid item xs={5}><Typography variant="h3" id="experience">Experience</Typography></Grid>
       <Grid item xs={5}>
         <Timeline active={1} bulletSize={24} lineWidth={2}>
           <Timeline.Item bullet={<GitBranch size={12} />} title="New branch">

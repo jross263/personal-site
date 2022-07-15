@@ -2,6 +2,7 @@ import Header from './components/Header';
 import Landing from './content/Landing';
 import About from './content/About'
 import Experience from './content/Experience';
+import Projects from './content/Projects';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         <Landing />
         <About />
         <Experience />
+        <Projects />
       </main>
     </>
   )
