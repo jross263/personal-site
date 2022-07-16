@@ -4,14 +4,24 @@ import Project from '../components/Project';
 
 const Projects = () => {
   return(
-    <Grid container direction="column" alignItems="center" justifyContent="center" sx={{width:'50%'}} id="about" spacing={4}>
-      <Grid item xs={5}><Typography variant="h3">Projects</Typography></Grid>
-      <Grid item xs={5}>
-        <Project />
-        <Project right/>
-        <Project />
-        <Project right/>
-        <Project />
+    <Grid container direction="column" alignItems="center" justifyContent="center" spacing={4}>
+      <Grid item><Typography variant="h3" id="projects">Projects</Typography></Grid>
+      <Grid container item justifyContent="center" spacing={2}>
+        <Grid container item justifyContent="center">
+          <Project />
+        </Grid>
+        <Grid container item justifyContent="center">
+          <Project right />
+        </Grid>
+        <Grid container item justifyContent="center">
+          <Project />
+        </Grid>
+        <Grid container item justifyContent="center">
+          <Project right />
+        </Grid>
+        <Grid container item justifyContent="center">
+          <Project />
+        </Grid>
       </Grid>
     </Grid>
   );
