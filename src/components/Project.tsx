@@ -1,6 +1,4 @@
 import { Chip, Grid, Paper, Typography } from "@mui/material";
-import { useTheme } from '@mui/material/styles';
-import useMediaQuery from '@mui/material/useMediaQuery';
 import useMediaHooks from "../hooks/MediaHooks";
 import thumbnail from './img_forest.jpg';
 
