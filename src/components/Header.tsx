@@ -1,5 +1,6 @@
 
 import { useWindowScroll } from '@mantine/hooks';
+import { Chip } from '@mui/material';
 import { useEffect, useState } from 'react';
 
 const Header = () => {
@@ -14,9 +15,28 @@ const Header = () => {
 
   return (
     <header className={`${showHeader ? 'sticky' : ''}`}>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#about">About</a>
+      <Chip
+        label="Projects"
+        component="a"
+        href="#projects"
+        color="info"
+        sx={{mr:'30px'}}
+        clickable
+      />
+      <Chip
+        label="Experience"
+        component="a"
+        href="#experience"
+        color="info"
+        clickable
+      />
+      <Chip
+        label="About"
+        component="a"
+        href="#about"
+        color="info"
+        clickable
+      />
     </header>
   )
 }

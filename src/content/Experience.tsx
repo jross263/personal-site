@@ -10,6 +10,7 @@ interface TimelineEntryProps {
   icon: JSX.Element;
   main: string;
   sub?: string;
+  seperator?: boolean;
 }
 
 const Experience = () => {
@@ -18,7 +19,7 @@ const Experience = () => {
   const sectionWidth = lg ? "50%" : md ? '75%' : '90%';
   const sectionPadding = lg ? "2rem" : md ? '1rem' : '1rem';
 
-  const TimelineEntry = ({ time, icon, main, sub }: TimelineEntryProps) => {
+  const TimelineEntry = ({ time, icon, main, sub, seperator }: TimelineEntryProps) => {
     return (
       <TimelineItem>
         <TimelineOppositeContent>
@@ -28,7 +29,7 @@ const Experience = () => {
           <TimelineDot sx={{ background: "#276FBF" }}>
             {icon}
           </TimelineDot>
-          <TimelineConnector />
+          {seperator && <TimelineConnector />}
         </TimelineSeparator>
         <TimelineContent sx={{ wordBreak: "break-word" }}>
           <Typography variant="h6" component="span">
@@ -53,24 +54,28 @@ const Experience = () => {
               icon={<SchoolIcon />}
               main='University of Western Ontario'
               sub='Undergraduate Student'
+              seperator
             />
             <TimelineEntry
               time='2019 - 2020'
               icon={<TerminalIcon />}
               main='Ontario Power Generation'
               sub='Programming/Contract Coordinator Intern'
+              seperator
             />
             <TimelineEntry
               time='2020 - 2021'
               icon={<SchoolIcon />}
               main='University of Western Ontario'
               sub='Honors Specialization in Computer Science & Minor in Software Engineering'
+              seperator
             />
             <TimelineEntry
               time='2021 - 2022'
               icon={<TerminalIcon />}
               main='Ontario Power Generation'
               sub='Programmer - Analyst'
+              seperator
             />
             <TimelineEntry
               time='The Future'

@@ -13,7 +13,7 @@ const Projects = () => {
       </Grid>
       <Grid container item justifyContent="center" spacing={2}>
         {projectData.map((e, i) => (
-          <Grid container item justifyContent="center">
+          <Grid container item justifyContent="center" key={i}>
             <Project right={i % 2 != 0} />
           </Grid>
         ))}

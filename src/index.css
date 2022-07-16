@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
@@ -21,6 +25,9 @@ header {
   display: flex;
   flex-direction: row-reverse;
   gap: 2rem;
+  align-items: center;
+  z-index: 1;
+  background: #183059;
 }
 
 .sticky {
