@@ -1,8 +1,11 @@
 import { Chip, Grid, Typography } from "@mui/material";
 import thumbnail from './img_forest.jpg';
 
+interface ProjectProps{
+  right?: boolean
+};
 
-const Project = ({right}) => {
+const Project = ({ right }: ProjectProps) => {
   return(
     <Grid container spacing={2}>
       {!right && <Grid item xs={4}>
