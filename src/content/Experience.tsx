@@ -1,33 +1,103 @@
-import { Timeline, Text } from "@mantine/core";
 import { Typography, Grid } from "@mui/material";
-import { GitCommit, GitBranch, GitPullRequest, MessageDots } from "tabler-icons-react";
+import SchoolIcon from '@mui/icons-material/School';
+import TerminalIcon from '@mui/icons-material/Terminal';
+import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
+import { Timeline, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator , TimelineConnector} from "@mui/lab";
 
 const Experience = () => {
   return (
-    <Grid container direction="column" alignItems="center" justifyContent="center" spacing={4} sx={{ width: '50%' }}>
+    <Grid container direction="column" alignItems="center" justifyContent="center" spacing={4}>
       <Grid item xs={5}><Typography variant="h3" id="experience">Experience</Typography></Grid>
-      <Grid item xs={5}>
-        <Timeline active={1} bulletSize={24} lineWidth={2}>
-          <Timeline.Item bullet={<GitBranch size={12} />} title="New branch">
-            <Text color="dimmed" size="sm">You&apos;ve created new branch <Text variant="link" component="span" inherit>fix-notifications</Text> from master</Text>
-            <Text size="xs" mt={4}>2 hours ago</Text>
-          </Timeline.Item>
-
-          <Timeline.Item bullet={<GitCommit size={12} />} title="Commits">
-            <Text color="dimmed" size="sm">You&apos;ve pushed 23 commits to<Text variant="link" component="span" inherit>fix-notifications branch</Text></Text>
-            <Text size="xs" mt={4}>52 minutes ago</Text>
-          </Timeline.Item>
-
-          <Timeline.Item title="Pull request" bullet={<GitPullRequest size={12} />} lineVariant="dashed">
-            <Text color="dimmed" size="sm">You&apos;ve submitted a pull request<Text variant="link" component="span" inherit>Fix incorrect notification message (#187)</Text></Text>
-            <Text size="xs" mt={4}>34 minutes ago</Text>
-          </Timeline.Item>
-
-          <Timeline.Item title="Code review" bullet={<MessageDots size={12} />}>
-            <Text color="dimmed" size="sm"><Text variant="link" component="span" inherit>Robert Gluesticker</Text> left a code review on your pull request</Text>
-            <Text size="xs" mt={4}>12 minutes ago</Text>
-          </Timeline.Item>
-        </Timeline>
+      <Grid item xs={5} sx={{width:'50%'}}>
+      <Timeline position="alternate">
+        <TimelineItem>
+          <TimelineOppositeContent>
+            2016 - 2019
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot>
+              <SchoolIcon />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <Typography variant="h6" component="span">
+              University of Western Ontario
+            </Typography>
+            <Typography color="text.secondary">
+              Undergraduate Student
+            </Typography>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent>
+            2019 - 2020
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot>
+              <TerminalIcon />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <Typography variant="h6" component="span">
+              Ontario Power Generation
+            </Typography>
+            <Typography color="text.secondary">
+              Programming/Contract Coordinator Intern
+            </Typography>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent>
+            2020 - 2021
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot>
+              <SchoolIcon />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <Typography variant="h6" component="span">
+              University of Western Ontario
+            </Typography>
+            <Typography color="text.secondary">
+              Honors Specialization in Computer Science & Minor in Software Engineering 
+            </Typography>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent>
+            2021 - 2022
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot>
+              <TerminalIcon />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <Typography variant="h6" component="span">
+              Ontario Power Generation
+            </Typography>
+            <Typography color="text.secondary">
+              Programmer - Analyst
+            </Typography>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent>
+            The Future
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot>
+              <QuestionMarkIcon />
+            </TimelineDot>
+          </TimelineSeparator>
+          <TimelineContent>Who knows?</TimelineContent>
+        </TimelineItem>
+      </Timeline>
       </Grid>
     </Grid>
   );

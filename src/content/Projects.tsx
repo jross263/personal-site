@@ -1,17 +1,17 @@
 import Grid from '@mui/material/Grid';
 import { Avatar, Typography } from "@mui/material";
+import Project from '../components/Project';
 
 const Projects = () => {
   return(
-    <Grid container direction="column" alignItems="center" justifyContent="center" sx={{width:'50%'}} id="about">
+    <Grid container direction="column" alignItems="center" justifyContent="center" sx={{width:'50%'}} id="about" spacing={4}>
       <Grid item xs={5}><Typography variant="h3">Projects</Typography></Grid>
       <Grid item xs={5}>
-        <Typography variant="h5" className="customh1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-          sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </Typography>
+        <Project />
+        <Project right/>
+        <Project />
+        <Project right/>
+        <Project />
       </Grid>
     </Grid>
   );

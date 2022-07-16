@@ -4,7 +4,7 @@ import { Avatar, Typography } from "@mui/material";
 const About = () => {
   return(
     <Grid container direction="column" alignItems="center" justifyContent="center" sx={{width:'50%'}}>
-      <Grid item xs={5}><Typography variant="h3" id="experience">About Me</Typography></Grid>
+      <Grid item xs={5}><Typography variant="h3" id="about">About Me</Typography></Grid>
       <Grid item xs={5}>
         <Typography variant="h5" className="customh1">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
