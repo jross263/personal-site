@@ -1,24 +1,17 @@
-
-import { useWindowScroll } from '@mantine/hooks';
+import { useState } from 'react';
 import { Chip, Grid, IconButton } from '@mui/material';
-import { useEffect, useState } from 'react';
-import useMediaHooks from '../hooks/MediaHooks';
 import MenuIcon from '@mui/icons-material/Menu';
+import useMediaHooks from '../hooks/MediaHooks';
 
 const Header = () => {
-  const [scroll] = useWindowScroll();
-  const [lastScroll, setLastScroll] = useState({ x: 0, y: 0 })
-  const [showHeader, setShowHeader] = useState(false)
   const [open, setOpen] = useState(false);
 
   const headerStyles = {
     height: 'auto',
     maxHeight: open ? '250px' : '60px',
     position: 'fixed',
-    visibility: showHeader ? 'visible' : 'hidden',
-    opacity: showHeader ? 1 : 0,
     top: 0,
-    transition: 'visibility 0.3s linear, opacity 0.3s linear, max-height 0.5s ease-in-out',
+    transition: 'max-height 0.5s ease-in-out',
     zIndex: 1,
     background: '#183059',
     overflow: 'hidden'
@@ -26,11 +19,6 @@ const Header = () => {
 
 
   const [sm] = useMediaHooks();
-
-  useEffect(() => {
-    setShowHeader(lastScroll.y >= scroll.y)
-    setLastScroll(scroll)
-  }, [scroll])
 
   return (
     <Grid container alignItems={open ? "-moz-initial" :"center"} sx={headerStyles}>
