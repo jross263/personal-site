@@ -12,8 +12,8 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   const headerStyles = {
-    height: open ? 'auto' : '60px',
-    maxHeight: open ? '1000px' : '60px',
+    height: 'auto',
+    maxHeight: open ? '250px' : '60px',
     position: 'fixed',
     visibility: showHeader ? 'visible' : 'hidden',
     opacity: showHeader ? 1 : 0,

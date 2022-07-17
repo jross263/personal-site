@@ -13,7 +13,7 @@ const Landing = () => {
       alignItems="center"
       justifyContent="center"
       flexDirection={md || sm ? 'column-reverse' : 'row'}
-      sx={{ height: '100vh', background: '#183059' }}
+      sx={{ height: '100vh', background: '#183059'}}
     >
       <Grid item md={6} lg={6} xl={6} sx={{ padding: '2rem' }}>
         <Paper elevation={3} sx={{ width: '100%', height: '100%', background: "#F6F4F3" }}>
