@@ -52,7 +52,7 @@ const Experience = () => {
             <TimelineEntry
               time='2016 - 2019'
               icon={<SchoolIcon />}
-              main='University of Western Ontario'
+              main='Western University'
               sub='Undergraduate Student'
               seperator
             />
@@ -66,7 +66,7 @@ const Experience = () => {
             <TimelineEntry
               time='2020 - 2021'
               icon={<SchoolIcon />}
-              main='University of Western Ontario'
+              main='Western University'
               sub='Honors Specialization in Computer Science & Minor in Software Engineering'
               seperator
             />

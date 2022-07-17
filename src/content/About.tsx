@@ -13,10 +13,20 @@ const About = () => {
       <Grid item xs={5}>
         <Paper elevation={2} sx={{padding: '2rem'}}>
           <Typography variant="h5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Thanks for visiting my website! I'm Jacob, a Software Developer based in Ontario, Canada.
+          </Typography>
+          <br/>
+          <Typography variant="h5">
+            I'm a recent graduate of Western University, where I acquired my B.Sc. Honours, Specializing 
+            in Computer Science and Minoring in Software Engineering. During my time at Western, I had the opportunity 
+            to participate in the Science Internship program, where I spent a year working at Ontario Power Generation. 
+            I experienced many new technologies, and this is where my interest in web development began. After graduating, 
+            I accepted a position to return to Ontario Power Generation and am now doing full-stack web development.
+          </Typography>
+          <br/>
+          <Typography variant="h5">
+            Outside of my professional life, I have lots of hobbies! I'm an avid gamer (I blame old DoS games I used to play on the family PC), 
+            chess player, aspiring home cook (I love Gordan Ramsey), Rubik's cuber, and a terrible golfer.
           </Typography>
         </Paper>
       </Grid>
