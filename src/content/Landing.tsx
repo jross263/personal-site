@@ -5,7 +5,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailIcon from '@mui/icons-material/Mail';
 import useMediaHooks from '../hooks/MediaHooks';
 
-import headshot from './headshot.jpg'
+import headshot from '../pictures/headshot.jpg'
 
 const Landing = () => {
   const [sm, md] = useMediaHooks()

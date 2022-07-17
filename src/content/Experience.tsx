@@ -2,6 +2,7 @@ import { Typography, Grid, Paper } from "@mui/material";
 import SchoolIcon from '@mui/icons-material/School';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
+import CloudIcon from '@mui/icons-material/Cloud';
 import { Timeline, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator, TimelineConnector } from "@mui/lab";
 import useMediaHooks from "../hooks/MediaHooks";
 
@@ -42,9 +43,9 @@ const Experience = () => {
   };
 
   return (
-    <Grid container direction="column" alignItems="center" justifyContent="center" spacing={4}>
+    <Grid container direction="column" alignItems="center" justifyContent="center" spacing={4} sx={{pt:'60px'}} id="experience">
       <Grid item xs={5}>
-        <Typography variant="h3" id="experience">Experience</Typography>
+        <Typography variant="h3">Experience</Typography>
       </Grid>
       <Grid item xs={5} sx={{ width: sectionWidth }}>
         <Paper elevation={2} sx={{ padding: sectionPadding }}>
@@ -64,6 +65,13 @@ const Experience = () => {
               seperator
             />
             <TimelineEntry
+              time='2020'
+              icon={<CloudIcon />}
+              main='Automation Design Services Inc.'
+              sub='Network Consultant'
+              seperator
+            />
+            <TimelineEntry
               time='2020 - 2021'
               icon={<SchoolIcon />}
               main='Western University'
@@ -71,7 +79,7 @@ const Experience = () => {
               seperator
             />
             <TimelineEntry
-              time='2021 - 2022'
+              time='2021 - Present'
               icon={<TerminalIcon />}
               main='Ontario Power Generation'
               sub='Programmer - Analyst'
