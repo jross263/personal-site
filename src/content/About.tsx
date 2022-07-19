@@ -25,7 +25,7 @@ const About = () => {
           </Typography>
           <br/>
           <Typography variant="h5">
-            Outside of my professional life, I have lots of hobbies! I'm an avid gamer (I blame old DoS games I used to play on the family PC), 
+            Outside of my professional life, I have lots of hobbies! I'm an avid gamer (I blame old DOS games I used to play on the family PC), 
             chess player, aspiring home cook (I love Gordan Ramsey), Rubik's cuber, and a terrible golfer.
           </Typography>
         </Paper>

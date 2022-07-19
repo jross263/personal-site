@@ -20,7 +20,7 @@ const projectData = [{
 {
   thumbnail: cs4471Thumbnail,
   title: 'CS4471 Stock Microservices',
-  description: 'A hub for stock market microservices. Services were decoupled and deployed indapentantly, allowing them to be dynamically turned on or off. Users could subscribe to indivual services and be notified via email when new data was available for them to view.',
+  description: 'A hub for stock market microservices. Services were decoupled and deployed independently, allowing them to be dynamically turned on or off. Users could subscribe to individual services and be notified via email when new data was available for them to view.',
   skills:['React','Bootstrap', 'Node.js', 'Express.js', 'Sequelize', 'MySQL', 'AWS EC2', 'AWS SNS'],
   link:'https://github.com/jross263/CS4471'
 },
