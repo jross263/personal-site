@@ -13,7 +13,7 @@ const projectData = [{
 },{
   thumbnail: wordleThumbnail,
   title: 'Svelte Wordle',
-  description: 'This project is my first time trying out Svelte. I decided to replicate the game Worlde to challenge myself with a new framework. The app is fully functional and mobile responsive. For future improvements, I\'d like to implement a keyboard like the original wordle game that changes colours based on your guess and implement a dark mode.',
+  description: 'This project is my first time trying out Svelte. I decided to replicate the game Wordle to challenge myself with a new framework. The app is fully functional and mobile responsive. For future improvements, I\'d like to implement a keyboard like the original wordle game that changes colours based on your guess and implement a dark mode.',
   skills:['Svelte','TypeScript', 'CSS', 'Vite', 'Vitest'],
   link:'https://github.com/jross263/learning-svelte-wordle'
 },
