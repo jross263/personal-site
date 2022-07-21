@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { Chip, Grid, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Chip, Grid, IconButton } from '@mui/material';
+import { useState } from 'react';
 import useMediaHooks from '../hooks/MediaHooks';
 
 const Header = () => {
@@ -21,14 +21,14 @@ const Header = () => {
   const [sm] = useMediaHooks();
 
   return (
-    <Grid container alignItems={open ? "-moz-initial" :"center"} sx={headerStyles}>
+    <Grid container alignItems={open ? '-moz-initial' : 'center'} sx={headerStyles}>
       {sm && <Grid item>
-        <IconButton aria-label="delete" sx={{ height: '60px', width: '60px' }} onClick={()=>{
-          setOpen(!open)
-        }}><MenuIcon sx={{ color: "white" }} /></IconButton>
+        <IconButton aria-label="delete" sx={{ height: '60px', width: '60px' }} onClick={() => {
+          setOpen(!open);
+        }}><MenuIcon sx={{ color: 'white' }} /></IconButton>
       </Grid>
       }
-      <Grid container direction={sm ? "column" : "row"} justifyContent="flex-end" spacing={3} sx={{mr:'30px', p:'1rem'}} item>
+      <Grid container direction={sm ? 'column' : 'row'} justifyContent="flex-end" spacing={3} sx={{ mr: '30px', p: '1rem' }} item>
         <Grid item>
           <Chip
             label="About"
@@ -58,6 +58,6 @@ const Header = () => {
         </Grid>
       </Grid>
     </Grid>
-  )
-}
+  );
+};
 export default Header;

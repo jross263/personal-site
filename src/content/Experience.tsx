@@ -1,10 +1,10 @@
-import { Typography, Grid, Paper } from "@mui/material";
+import CloudIcon from '@mui/icons-material/Cloud';
+import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 import SchoolIcon from '@mui/icons-material/School';
 import TerminalIcon from '@mui/icons-material/Terminal';
-import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
-import CloudIcon from '@mui/icons-material/Cloud';
-import { Timeline, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator, TimelineConnector } from "@mui/lab";
-import useMediaHooks from "../hooks/MediaHooks";
+import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from '@mui/lab';
+import { Grid, Paper, Typography } from '@mui/material';
+import useMediaHooks from '../hooks/MediaHooks';
 
 interface TimelineEntryProps {
   time: string;
@@ -16,9 +16,9 @@ interface TimelineEntryProps {
 
 const Experience = () => {
 
-  const [sm, md, lg] = useMediaHooks()
-  const sectionWidth = lg ? "50%" : md ? '75%' : '90%';
-  const sectionPadding = lg ? "2rem" : md ? '1rem' : '1rem';
+  const [, md, lg] = useMediaHooks();
+  const sectionWidth = lg ? '50%' : md ? '75%' : '90%';
+  const sectionPadding = lg ? '2rem' : md ? '1rem' : '1rem';
 
   const TimelineEntry = ({ time, icon, main, sub, seperator }: TimelineEntryProps) => {
     return (
@@ -27,12 +27,12 @@ const Experience = () => {
           {time}
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot sx={{ background: "#276FBF" }}>
+          <TimelineDot sx={{ background: '#276FBF' }}>
             {icon}
           </TimelineDot>
           {seperator && <TimelineConnector />}
         </TimelineSeparator>
-        <TimelineContent sx={{ wordBreak: "break-word" }}>
+        <TimelineContent sx={{ wordBreak: 'break-word' }}>
           <Typography variant="h6" component="span">
             {main}
           </Typography>
@@ -43,7 +43,7 @@ const Experience = () => {
   };
 
   return (
-    <Grid container direction="column" alignItems="center" justifyContent="center" spacing={4} sx={{pt:'60px'}} id="experience">
+    <Grid container direction="column" alignItems="center" justifyContent="center" spacing={4} sx={{ pt: '60px' }} id="experience">
       <Grid item xs={5}>
         <Typography variant="h3">Experience</Typography>
       </Grid>
@@ -97,4 +97,4 @@ const Experience = () => {
   );
 };
 
-export default Experience
+export default Experience;

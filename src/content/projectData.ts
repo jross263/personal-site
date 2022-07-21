@@ -1,10 +1,10 @@
-import portfilioThumbnail from '../pictures/portfolio.png'
-import wordleThumbnail from '../pictures/wordle.png'
-import farmgameThumbnail from '../pictures/farmgame.png'
 import cs4471Thumbnail from '../pictures/cs4471.png';
-import ormbenchmarkThumbnail from '../pictures/ormbenchmark.png'
-import mftsThumbnail from '../pictures/mfts.png'
-import tspbThumbnail from '../pictures/tspb.png'
+import farmgameThumbnail from '../pictures/farmgame.png';
+import mftsThumbnail from '../pictures/mfts.png';
+import ormbenchmarkThumbnail from '../pictures/ormbenchmark.png';
+import portfilioThumbnail from '../pictures/portfolio.png';
+import tspbThumbnail from '../pictures/tspb.png';
+import wordleThumbnail from '../pictures/wordle.png';
 
 const projectData = [{
   thumbnail: portfilioThumbnail,
@@ -53,5 +53,5 @@ const projectData = [{
   description: 'A farming game in development by myself and a couple of friends. I\'ve implemented a camera controller with smooth movement, zooming, and rotation. I\'ve also developed a scalable game event controller thats used to focus the camera on game objects.',
   skills: ['Unity', 'C#'],
   link: 'https://github.com/jross263/Farm-Game'
-}]
+}];
 export default projectData;
