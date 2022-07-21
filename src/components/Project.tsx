@@ -1,4 +1,6 @@
-import { Chip, Grid, Link, Paper, Typography } from '@mui/material';
+import { Chip, Dialog, Grid, Link, Paper, Typography } from '@mui/material';
+import { Theme } from '@mui/system';
+import { CSSProperties, useState } from 'react';
 import useMediaHooks from '../hooks/MediaHooks';
 
 interface ProjectProps {
@@ -13,11 +15,15 @@ interface ProjectProps {
 
 const Project = ({ right, thumbnail, title, description, skills, link, caption }: ProjectProps) => {
 
+  const [open, setOpen] = useState(false);
   const [, , , xl] = useMediaHooks();
+
+  const imgStyles: CSSProperties = { width: '100%', height: '100%', maxWidth: '300px' };
+  const chipStyles = (theme: Theme) => ({ background: theme.palette.info.main, color: 'white' });
 
   const picture =
     <Grid container item lg={4} xl={4} alignItems="center" justifyContent="center">
-      <img src={thumbnail} style={{ width: '100%', height: '100%', maxWidth: '300px' }}></img>
+      <img src={thumbnail} style={imgStyles} onClick={() => setOpen(true)}></img>
     </Grid>;
 
   const titleContent = link ? <Link href={link} target="_blank" rel="noopener">{title}</Link> : title;
@@ -33,13 +39,16 @@ const Project = ({ right, thumbnail, title, description, skills, link, caption }
           <Grid container item spacing={2}>
             {skills.map((e, i) => (
               <Grid item key={i}>
-                <Chip sx={{ background: '#276FBF', color: 'white' }} label={e} />
+                <Chip sx={chipStyles} label={e} />
               </Grid>
             ))}
           </Grid>
         </Grid>
         {right && picture}
       </Grid>
+      <Dialog open={open} onClose={() => setOpen(false)} fullWidth={true}>
+        <img src={thumbnail}></img>
+      </Dialog>
     </Paper>
   );
 };
