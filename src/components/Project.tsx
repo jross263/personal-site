@@ -7,10 +7,11 @@ interface ProjectProps {
   title: string,
   description: string,
   skills: string[]
-  link?: string
+  link?: string,
+  caption?: string
 };
 
-const Project = ({ right, thumbnail, title, description, skills, link }: ProjectProps) => {
+const Project = ({ right, thumbnail, title, description, skills, link, caption }: ProjectProps) => {
 
   const [sm, md, lg, xl] = useMediaHooks();
 
@@ -27,6 +28,7 @@ const Project = ({ right, thumbnail, title, description, skills, link }: Project
         {!right && picture}
         <Grid container item flexDirection="column" lg={8} xl={8} sx={{gap:'0.5rem'}}>
           <Typography variant="h4">{titleContent}</Typography>
+          { caption && <Typography variant="caption">{caption}</Typography>}
           <Typography variant="body1">{description}</Typography>
           <Grid container item spacing={2}>
             {skills.map((e, i) => (
