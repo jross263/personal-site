@@ -6,7 +6,7 @@ const About = () => {
   const [sm, md, lg] = useMediaHooks();
   const sectionWidth = lg ? "50%" : md ? '75%' : '90%';
   return(
-    <Grid container direction="column" alignItems="center" justifyContent="center" sx={{width: sectionWidth, pt:'60px'}} id="about">
+    <Grid container direction="column" alignItems="center" justifyContent="center" sx={{width: sectionWidth, pt:'60px'}} id="about" spacing={4}>
       <Grid item xs={5}>
         <Typography variant="h3">About Me</Typography>
       </Grid>
