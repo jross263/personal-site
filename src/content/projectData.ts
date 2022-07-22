@@ -23,14 +23,14 @@ const projectData = [{
   thumbnail: mftsThumbnail,
   title: 'Maintenance Fundamentals & Technical Skills App',
   caption: 'Work project shown with permission',
-  description: '',
+  description: 'An internal application to share and bookmark safety events to review with staff in pre-job briefings. Leveraging Azure Active Directory, the application has multiple roles that can be assigned, allowing users to upload and modify their content.',
   skills: ['React', 'MUI', 'Node.js', 'Express.js', 'Sequelize', 'MSSQL', 'Azure Devops', 'CI/CD', 'Azure AD', 'Azure App Services'],
 },
 {
   thumbnail: tspbThumbnail,
   title: 'Technical Pocketbook App',
   caption: 'Work project shown with permission',
-  description: '',
+  description: 'An internal application to easily distribute and access digital books from any device. Utilizes service workers to make the app available offline and installable on user devices.',
   skills: ['React', 'MUI', 'Service Worker', 'Node.js', 'Express.js', 'Sequelize', 'MSSQL', 'Azure Devops', 'CI/CD', 'Azure AD', 'Azure App Services', 'Azure Blob Storage'],
 },
 {
