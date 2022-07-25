@@ -4,8 +4,11 @@ import MailIcon from '@mui/icons-material/Mail';
 import { IconButton, Link, Paper, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import useMediaHooks from '../hooks/MediaHooks';
+import ArticleIcon from '@mui/icons-material/Article';
 
 import headshot from '../pictures/headshot.jpg';
+import resume from '../pictures/Resume.pdf';
+
 
 const Landing = () => {
   const [sm, md] = useMediaHooks();
@@ -23,9 +26,10 @@ const Landing = () => {
             <Typography variant="h5" component="div">Hi There 👋, I&apos;m</Typography>
             <Typography variant="h2" component="div">Jacob Ross</Typography>
             <Typography variant="h4" component="div">A Full Stack Web Developer Powering the Future @ <Link href="https://www.opg.com/" target="_blank" rel="noopener" color="#66cc00">OPG</Link></Typography>
-            <IconButton href="https://github.com/jross263" target="_blank"><GitHubIcon color='info' /></IconButton>
-            <IconButton href="https://www.linkedin.com/in/jacob-ross-61476b245/" target="_blank"><LinkedInIcon color='info' /></IconButton>
+            <IconButton href="https://github.com/jross263" target="_blank" rel="noopener"><GitHubIcon color='info' /></IconButton>
+            <IconButton href="https://www.linkedin.com/in/jacob-ross-61476b245/" target="_blank" rel="noopener"><LinkedInIcon color='info' /></IconButton>
             <IconButton href="mailto:jacob@jacobross.ca"><MailIcon color='info' /></IconButton>
+            <IconButton href={resume} target="_blank" rel="noopener"><ArticleIcon color='info' /></IconButton>
           </div>
         </Paper>
       </Grid>
