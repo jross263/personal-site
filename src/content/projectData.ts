@@ -5,6 +5,7 @@ import ormbenchmarkThumbnail from '../pictures/ormbenchmark.png';
 import portfilioThumbnail from '../pictures/portfolio.png';
 import tspbThumbnail from '../pictures/tspb.png';
 import wordleThumbnail from '../pictures/wordle.png';
+import tacobotThumbnail from '../pictures/tacobot.png';
 
 const projectData = [{
   thumbnail: portfilioThumbnail,
@@ -12,7 +13,15 @@ const projectData = [{
   description: 'You\'re here now! Personal Portfolio website showcasing who I am, my work and education, and projects I\'ve worked on. Built using React + TypeScript, bootstrapped with Vite, hosted on Vercel.',
   skills: ['React', 'TypeScript', 'MUI', 'Vite', 'Vercel'],
   link: 'https://github.com/jross263/personal-site'
-}, {
+},
+{
+  thumbnail: tacobotThumbnail,
+  title: 'Tacobot',
+  description: 'This project is a Discord bot/web app. Built using Discord.js, the bot has the functionality to remove recently sent messages in bulk, eliminating the need to delete individual messages. Along with the bot is a web application where server owners can sign in using Discord to view the usage log of the bot.',
+  skills: ['Next.js', 'TypeScript', 'Tailwind', 'JavaScript', 'Vercel', 'OAuth2', 'Discord.js', 'Heroku', 'Firestore'],
+  link: 'https://tacobot.ca'
+},
+{
   thumbnail: wordleThumbnail,
   title: 'Svelte Wordle',
   description: 'This project is my first time trying out Svelte. I decided to replicate the game Wordle to challenge myself with a new framework. The app is fully functional and mobile responsive. For future improvements, I\'d like to implement a keyboard like the original wordle game that changes colours based on your guess and implement a dark mode.',
