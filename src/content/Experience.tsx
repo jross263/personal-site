@@ -4,6 +4,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from '@mui/lab';
 import { Grid, Paper, Typography } from '@mui/material';
+import { JSX } from 'react';
 import useMediaHooks from '../hooks/MediaHooks';
 
 interface TimelineEntryProps {
@@ -79,10 +80,17 @@ const Experience = () => {
               seperator
             />
             <TimelineEntry
-              time='2021 - Present'
+              time='2021 - 2022'
               icon={<TerminalIcon />}
               main='Ontario Power Generation'
               sub='Programmer - Analyst'
+              seperator
+            />
+            <TimelineEntry
+              time='2022 - Present'
+              icon={<TerminalIcon />}
+              main='Phreesia'
+              sub='Software Engineer II'
               seperator
             />
             <TimelineEntry

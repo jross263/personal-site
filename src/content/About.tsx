@@ -13,15 +13,14 @@ const About = () => {
       <Grid item xs={5}>
         <Paper elevation={2} sx={{ padding: '2rem' }}>
           <Typography variant="h5">
-            Thanks for visiting my website! I&apos;m Jacob, a Software Developer based in Ontario, Canada.
+            Thanks for visiting my website! I&apos;m Jacob, a Full Stack Engineer based in Ontario, Canada.
           </Typography>
           <br />
           <Typography variant="h5">
-            I&apos;m a recent graduate of Western University, where I acquired my B.Sc. Honours, Specializing
-            in Computer Science and Minoring in Software Engineering. During my time at Western, I had the opportunity
-            to participate in the Science Internship program, where I spent a year working at Ontario Power Generation.
-            I experienced many new technologies, and this is where my interest in web development began. After graduating,
-            I accepted a position to return to Ontario Power Generation and am now doing full-stack web development.
+            I&apos;m a graduate of Western University, where I acquired my B.Sc. Honours, Specializing
+            in Computer Science and Minoring in Software Engineering. During my time at Western, I interned at
+            Ontario Power Generation, where I returned to work full-time after graduating. In October of 2022,
+            I joined Phreesia&apos;s Early Career Program, and quickly advanced to be a Software Engineer II, 2 years later I am a proud Phreesian!
           </Typography>
           <br />
           <Typography variant="h5">

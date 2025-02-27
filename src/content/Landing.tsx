@@ -25,7 +25,7 @@ const Landing = () => {
           <div style={{ padding: '1rem' }}>
             <Typography variant="h5" component="div">Hi There 👋, I&apos;m</Typography>
             <Typography variant="h2" component="div">Jacob Ross</Typography>
-            <Typography variant="h4" component="div">A Full Stack Web Developer Powering the Future @ <Link href="https://www.opg.com/" target="_blank" rel="noopener" color="#66cc00">OPG</Link></Typography>
+            <Typography variant="h4" component="div">A Full Stack Developer Enpowering Patients @ <Link href="https://www.phreesia.com/" target="_blank" rel="noopener" color="#f56631">Phreesia</Link></Typography>
             <IconButton href="https://github.com/jross263" target="_blank" rel="noopener"><GitHubIcon color='info' /></IconButton>
             <IconButton href="https://www.linkedin.com/in/jacob-ross-61476b245/" target="_blank" rel="noopener"><LinkedInIcon color='info' /></IconButton>
             <IconButton href="mailto:jacob@jacobross.ca"><MailIcon color='info' /></IconButton>
